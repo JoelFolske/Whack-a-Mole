@@ -3,77 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="whack-a-mole.css"
+    <title>Whack A Mole</title>
+    <link href=href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="whack-a-mole.css">
 </head>
 <body>
-    <div class="wrapper">
-	
-        <header>
-            <h1>WHACK A MOLE</h1>
-            <div class="score-box" id="score-box">
-                <h2>Score</h2>
-                <p class="score-out" id="score-out">0</p>
-            </div>
-        </header>
-        <main>
-            <button class="btn-start" id="btn-start">Start Game</button>
-            <div class="game-container">
-                <div class="row">
-                    <div class="box">
-                        <img src="" alt="mole" class="mole-pic" id="mole1">
-                        <img src="" alt="dirt" class="dirt-pic">
-                        <div class="mask"></div>
-                    </div>
-                    <div class="box">
-                        <img src="" alt="mole" class="mole-pic"
-                        id="mole2">
-                        <img src="" alt="dirt" class="dirt-pic">
-                        <div class="mask"></div>
-                    </div>
-                    <div class="box">
-                        <img src="" alt="mole" class="mole-pic"
-                        id="mole3">
-                        <img src="" alt="dirt" class="dirt-pic">
-                        <div class="mask"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="box">
-                        <img src="" alt="mole" class="mole-pic" id="mole4">
-                        <img src="" alt="dirt" class="dirt-pic">
-                        <div class="mask"></div>
-                    </div>
-                    <div class="box">
-                        <img src="" alt="mole" class="mole-pic" id="mole5">
-                        <img src="" alt="dirt" class="dirt-pic">
-                        <div class="mask"></div>
-                    </div>
-                    <div class="box">
-                        <img src="" alt="mole" class="mole-pic" id="mole6">
-                        <img src="" alt="dirt" class="dirt-pic">
-                        <div class="mask"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="box">
-                        <img src="" alt="mole" class="mole-pic" id="mole7">
-                        <img src="" alt="dirt" class="dirt-pic">
-                        <div class="mask"></div>
-                    </div>                    
-                    <div class="box">
-                        <img src="" alt="mole" class="mole-pic" id="mole8">
-                        <img src="" alt="dirt" class="dirt-pic">
-                        <div class="mask"></div>
-                    </div>
-                    <div class="box">
-                        <img src="" alt="mole" class="mole-pic" id="mole9">
-                        <img src="" alt="dirt" class="dirt-pic">
-                        <div class="mask"></div>
-                    </div>
-                </div>
-            </div>
-        </main>
+
+    <h1>Whack-A-Mole!</h1>
+    <h1 class="score">Your Score: 0</h1>
+    <div class="start">
+        <button onclick="startGame()">Start</button>
+        <button class="restart" onclick="restart()">Restart Game</button>
+        <button onclick="startGame()" id="time-left"></button>
+    </div>
+    <div class="game">
+
+        <div class="hole hole1">
+            <div class="mole"></div>
+        </div>
+
+        <div class="hole hole2">
+            <div class="mole"></div>
+        </div> 
+
+        <div class="hole hole3">
+            <div class="mole"></div>
+        </div>
+
+        <div class="hole hole4">
+            <div class="mole"></div>
+        </div>
+
+        <div class="hole hole5">
+            <div class="mole"></div>
+        </div>
+
+        <div class="hole hole6">
+            <div class="mole"></div>
+        </div>
+
+        <div class="hole hole7">
+            <div class="mole"></div>
+        </div>
+
+        <div class="hole hole8">
+            <div class="mole"></div>
+        </div>
+
+        <div class="hole hole9">
+            <div class="mole"></div>
+        </div>
+
+    </div>
         <script src="whack-a-mole.js"></script>
 </body>
 </html>
